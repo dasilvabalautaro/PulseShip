@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/home_dest">
+
+    <fragment
+        android:id="@+id/setting_dest"
+        android:name="com.globalhiddenodds.pulseship.ui.fragments.SettingFragment"
+        android:label="@string/lbl_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.globalhiddenodds.pulseship.ui.fragments.HomeFragment"
+        android:label="@string/lbl_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/next_action_tracking"
+            app:destination="@id/tracking_dest" />
+        <action
+            android:id="@+id/next_action_firstTime"
+            app:destination="@id/firstTime" />
+        <argument
+            android:name="refreshMenu"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/messages_dest"
+        android:name="com.globalhiddenodds.pulseship.ui.fragments.messages.MessagesFragment"
+        android:label="@string/lbl_messages"
+        tools:layout="@layout/fragment_messages">
+        <argument
+            android:name="contact"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+    <fragment
+        android:id="@+id/tracking_dest"
+        android:name="com.globalhiddenodds.pulseship.ui.fragments.TrackingFragment"
+        android:label="@string/lbl_tracking"
+        tools:layout="@layout/fragment_tracking" />
+
+    <navigation android:id="@+id/firstTime"
+        app:startDestination="@id/start_dest">
+        <fragment
+            android:id="@+id/start_dest"
+            android:name="com.globalhiddenodds.pulseship.ui.fragments.StartFragment"
+            android:label="@string/lbl_start" >
+            <action
+                android:id="@+id/next_action_login_dest"
+                app:destination="@id/login_dest"/>
+        </fragment>
+        <fragment
+            android:id="@+id/login_dest"
+            android:name="com.globalhiddenodds.pulseship.ui.fragments.login.LoginFragment"
+            android:label="@string/lbl_login"
+            tools:layout="@layout/fragment_login" />
+        <action
+            android:id="@+id/action_global_home_dest"
+            app:destination="@id/home_dest"
+            app:popUpTo="@id/home_dest"
+            app:popUpToInclusive="true">
+            <argument
+                android:name="refreshMenu"
+                app:argType="integer"
+                android:defaultValue="1"/>
+        </action>
+    </navigation>
+    <fragment
+        android:id="@+id/profile_dest"
+        android:name="com.globalhiddenodds.pulseship.ui.fragments.ProfileFragment"
+        android:label="@string/lbl_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/next_action_camera_activity"
+            app:destination="@id/camera_activity" />
+        <action
+            android:id="@+id/next_action_profile_to_permissions_storage"
+            app:destination="@id/permissions_storage_dest" />
+    </fragment>
+    <activity
+        android:id="@+id/camera_activity"
+        android:name="com.globalhiddenodds.pulseship.ui.activities.CameraActivity"
+        android:label="@string/lbl_camera"
+        tools:layout="@layout/activity_camera" />
+    <fragment
+        android:id="@+id/permissions_storage_dest"
+        android:name="com.globalhiddenodds.pulseship.ui.fragments.media.PermissionsStorageFragment"
+        android:label="@string/lbl_permission_storage" >
+        <action
+            android:id="@+id/next_action_permissions_storage_to_gallery"
+            app:destination="@id/gallery_dest"
+            app:popUpTo="@id/permissions_storage_dest"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/gallery_dest"
+        android:name="com.globalhiddenodds.pulseship.ui.fragments.media.GalleryFragment"
+        android:label="@string/lbl_gallery" />
+    <fragment
+        android:id="@+id/contacts_dest"
+        android:name="com.globalhiddenodds.pulseship.ui.fragments.contacts.ContactsFragment"
+        android:label="@string/lbl_contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/next_action_messages"
+            app:destination="@id/messages_dest">
+            <argument
+                android:name="contact"
+                app:argType="string"
+                android:defaultValue=""/>
+        </action>
+    </fragment>
+
+</navigation>

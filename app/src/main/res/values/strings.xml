@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Pulse Ship</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome! "</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="user_not_found">"User not found"</string>
+    <string name="profile_not_found">"Profile not found"</string>
+    <string name="create_failed">"Creation Error"</string>
+    <string name="lbl_login">Log In</string>
+    <string name="lbl_welcome">Welcome</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_description_image">image</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="lbl_name_user">Name User</string>
+    <string name="msg_sent_update">Sent data for updating</string>
+    <string name="msg_update_failed">Update failed</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_messages">Messages</string>
+    <string name="lbl_tracking">Tracking</string>
+    <string name="lbl_image">image</string>
+    <string name="lbl_start">Start</string>
+    <string name="lbl_sing_in">Sing In</string>
+    <string name="lbl_close">Close</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_profile">Profile</string>
+    <string name="lbl_capture">Capture</string>
+    <string name="lbl_permissions">Permissions</string>
+    <string name="lbl_selector_camera">Selector</string>
+    <string name="lbl_camera">Camera</string>
+    <string name="lbl_camera_live">CameraLive</string>
+    <string name="lbl_image_viewer">Image Viewer</string>
+    <string name="lbl_face">Face</string>
+    <string name="lbl_agree">Agree</string>
+    <string name="lbl_repeat">Repeat</string>
+    <string name="lbl_images_media">Images Media Store</string>
+    <string name="lbl_gallery">Gallery</string>
+    <string name="lbl_permission_storage">Permissions Storage</string>
+    <string name="lbl_image_message">Image Message</string>
+    <string name="lbl_say_something">Say something...</string>
+    <string name="lbl_send">Send</string>
+    <string name="lbl_search_contact_for_email">Search contact for email</string>
+    <string name="lbl_contacts">Contacts</string>
+</resources>

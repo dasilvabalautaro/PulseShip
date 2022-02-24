@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.fragments.StartFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/medium_guideline"
+            app:layout_constraintGuide_percent=".50"
+            android:orientation="horizontal"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_guideline"
+            app:layout_constraintGuide_percent=".05"
+            android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_guideline"
+            app:layout_constraintGuide_percent=".95"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/lbl_welcome"
+            style="@style/Widget.PulseShip.TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:shadowColor="@color/primaryDarkColor"
+            android:text="@string/app_name"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="4dp"
+            android:fontFamily="@font/roboto_bold"
+            android:insetLeft="8dp"
+            android:insetRight="16dp"
+            android:text="@string/lbl_sing_in"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="textStart"
+            app:iconTint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/right_guideline"
+            app:layout_constraintBottom_toBottomOf="@+id/medium_guideline"
+            app:strokeColor="@color/primaryDarkColor"
+            app:strokeWidth="1dp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:backgroundTint="@color/primaryLightColor"
+            android:elevation="4dp"
+            android:fontFamily="@font/roboto_bold"
+            android:insetLeft="8dp"
+            android:insetRight="16dp"
+            android:text="@string/lbl_close"
+            android:textColor="@color/primaryTextColor"
+            app:icon="@drawable/ic_close"
+            app:iconGravity="textStart"
+            app:iconTint="@android:color/white"
+            app:layout_constraintStart_toStartOf="@+id/left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/medium_guideline"
+            app:rippleColor="@android:color/white"
+            app:strokeColor="@color/primaryDarkColor"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

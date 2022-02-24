@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "642885641987",
+    "firebase_url": "https://pulseship-default-rtdb.firebaseio.com",
+    "project_id": "pulseship",
+    "storage_bucket": "pulseship.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642885641987:android:abe10e0b7ed288769d2b36",
+        "android_client_info": {
+          "package_name": "com.globalhiddenodds.pulseship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642885641987-o4kdmn2dc4shoja5o6qg43tpog7tt886.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.globalhiddenodds.pulseship",
+            "certificate_hash": "be4b9fad4925a634460314ef0ea5b122f24da642"
+          }
+        },
+        {
+          "client_id": "642885641987-8kto7aej59nhf24crvbf94le76fe1d7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvC7eQz3_WdaA2wdx8jVk2wheLoVc598M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642885641987-8kto7aej59nhf24crvbf94le76fe1d7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
